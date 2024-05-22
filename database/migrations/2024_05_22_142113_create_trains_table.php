@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('departing_station', 100);
             $table->string('arrival_station', 100);
             $table->time('departing_at', $precision = 0);
-            $table->timestampTz('arriving_at', $precision = 0);
+            $table->time('arriving_at', $precision = 0);
             $table->string('train_code', 100);
             $table->tinyInteger('number_of_wagons');
             $table->boolean('on_time');
